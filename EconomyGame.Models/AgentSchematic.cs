@@ -14,8 +14,11 @@ namespace EconomyGame.Models
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		public int AgentSchematicId { get; set; }
 		public string Name { get; set; }
+		
 		[ForeignKey("AgentProduction")]
 		public ICollection<AgentProduction> Productions { get; set; }
+		[ForeignKey("AgentConsumption")]
+		public ICollection<AgentConsumption> Consumptions { get; set; }
 		[ForeignKey("AgentUtility")]
 		public ICollection<AgentUtility> Utilities { get; set; }
 	}

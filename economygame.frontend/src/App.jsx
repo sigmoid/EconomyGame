@@ -1,20 +1,11 @@
 import { useState,useEffect} from 'react';
 import axios from 'axios';
+import SceneSetup from './components/ScenarioSetup';
 
 const App = () => {
 
-    const [agents, setAgents] = useState();
-
-    useEffect(() => {
-        axios.get('/api/EconomySim/getAgents')
-            .then(resp => resp.text())
-            .then(res => console.log(res));
-    }, []);
-
     return (
-        <>
-        <h1>hello, world</h1>
-        </>
+        <SceneSetup className="h-100"></SceneSetup>
     );
 }
 

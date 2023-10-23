@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EconomyGame.API", "EconomyG
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "economygame.frontend", "..\economygame.frontend\economygame.frontend.esproj", "{486F60C3-B590-41AB-9609-407BE55BA070}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EconomyGame.DB", "..\EconomyGame.DB\EconomyGame.DB.csproj", "{40BFE812-2077-4A46-ABB7-F00F45ACE3EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EconomyGame.DB", "..\EconomyGame.DB\EconomyGame.DB.csproj", "{40BFE812-2077-4A46-ABB7-F00F45ACE3EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EconomyGame.Logic", "..\EconomyGame.Logic\EconomyGame.Logic.csproj", "{EC3834EC-37AB-4F2C-A688-EEE9A1195109}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EconomyGame.Logic", "..\EconomyGame.Logic\EconomyGame.Logic.csproj", "{EC3834EC-37AB-4F2C-A688-EEE9A1195109}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EconomyGame.Models", "..\EconomyGame.Models\EconomyGame.Models.csproj", "{D6783130-515E-4792-865C-CDF4C6625C8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EconomyGame.Models", "..\EconomyGame.Models\EconomyGame.Models.csproj", "{D6783130-515E-4792-865C-CDF4C6625C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EconomyGame.Server", "..\EconomyGame.Server\EconomyGame.Server.csproj", "{5DCBBA9D-CD2D-4831-A7FE-7F29918B8D38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{D6783130-515E-4792-865C-CDF4C6625C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6783130-515E-4792-865C-CDF4C6625C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6783130-515E-4792-865C-CDF4C6625C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DCBBA9D-CD2D-4831-A7FE-7F29918B8D38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DCBBA9D-CD2D-4831-A7FE-7F29918B8D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DCBBA9D-CD2D-4831-A7FE-7F29918B8D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DCBBA9D-CD2D-4831-A7FE-7F29918B8D38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

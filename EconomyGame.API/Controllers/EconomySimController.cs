@@ -14,12 +14,25 @@ namespace EconomyGame.API.Controllers
 			_manager = manager;
 		}
 
+		#region GET
+
 		[Route("GetAgents")]
 		[HttpGet]
 		public IEnumerable<Agent> GetAgents()
 		{
 			return _manager.GetAgents();
 		}
+
+		[Route("GetResources")]
+		[HttpGet]
+		public IEnumerable<Resource> GetResources()
+		{
+			return null;
+		}
+
+		#endregion
+
+		#region INSERT
 
 		[Route("InsertAgent")]
 		[HttpPost]
@@ -31,5 +44,28 @@ namespace EconomyGame.API.Controllers
 
 			_manager.InsertAgent(agent, "testUserName");
 		}
+
+		[Route("InsertResource")]
+		[HttpPost]
+		public void InsertResource()
+		{
+			Resource resource = new Resource()
+			{
+			};
+
+			
+		}
+
+		#endregion
+
+		#region DELETE
+
+		[Route("DeleteResource")]
+		[HttpPost]
+		public void DeleteResource(int resourceId)
+		{ 
+		}
+
+		#endregion
 	}
 }
