@@ -16,5 +16,8 @@ namespace EconomyGame.Models
 		[ForeignKey("ResourceTypeId")]
 		public ResourceType ResourceType { get; set; }
 		public int Quantity { get; set; }
+		public DateTime ModifiedOn { get; set; }
+		public string ModifiedBy { get; set; }
+		public bool IsDeleted { get; set; }
 	}
 }

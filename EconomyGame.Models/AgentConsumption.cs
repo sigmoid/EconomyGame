@@ -18,5 +18,8 @@ namespace EconomyGame.Models
 
 		[Column(TypeName ="decimal(20,4)")]
 		public decimal AmountPerSecond { get; set; }
+		public DateTime ModifiedOn { get; set; }
+		public string ModifiedBy { get; set; }
+		public bool IsDeleted { get; set; }
 	}
 }

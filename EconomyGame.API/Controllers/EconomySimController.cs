@@ -1,6 +1,7 @@
 ﻿using EconomyGame.Logic;
 using EconomyGame.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Runtime.Versioning;
 
 namespace EconomyGame.API.Controllers
 {
@@ -23,11 +24,22 @@ namespace EconomyGame.API.Controllers
 			return _manager.GetAgents();
 		}
 
-		[Route("GetResources")]
+		[Route("GetResourceTypes")]
 		[HttpGet]
-		public IEnumerable<Resource> GetResources()
+		public IEnumerable<ResourceType> GetResourceTypes()
 		{
-			return null;
+			return _manager.GetResourceTypes();
+		}
+
+		#endregion
+
+		#region UPDATE
+
+		[Route("UpdateResourceTypes")]
+		[HttpPost]
+		public void UpdateResourceTypes(IEnumerable<ResourceType> resource)
+		{
+			_manager.UpdateResourceTypes(resource, "testUserName");
 		}
 
 		#endregion
@@ -45,25 +57,27 @@ namespace EconomyGame.API.Controllers
 			_manager.InsertAgent(agent, "testUserName");
 		}
 
-		[Route("InsertResource")]
+		[Route("InsertResourceType")]
 		[HttpPost]
-		public void InsertResource()
+		public void InsertResourceType()
 		{
-			Resource resource = new Resource()
+			ResourceType resource = new ResourceType()
 			{
+				Name=""
 			};
 
-			
+			_manager.InsertResourceType(resource, "testUserName");
 		}
 
 		#endregion
 
 		#region DELETE
 
-		[Route("DeleteResource")]
+		[Route("DeleteResourceType")]
 		[HttpPost]
-		public void DeleteResource(int resourceId)
-		{ 
+		public void DeleteResourceType(int resourceTypeId)
+		{
+			_manager.DeleteResourceType(resourceTypeId);
 		}
 
 		#endregion

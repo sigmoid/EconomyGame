@@ -16,7 +16,7 @@ namespace EconomyGame.Models
 		[ForeignKey("AgentSchematicId")]
 		public AgentSchematic Schematic { get; set; }
 		public string Color { get; set; }
-		public DateTime DateModified { get; set; }
+		public DateTime ModifiedOn { get; set; }
 		public string ModifiedBy { get; set; }
 		public bool IsDeleted { get; set; }
 		[ForeignKey("Resource")]
